@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+	/* Colors */
+	--primary: hsl(238, 29%, 16%);
+	--accent: hsl(14, 88%, 65%);
+
+	/* Text colors */
+	--neutral-light: hsl(240, 5%, 91%);
+	--neutral-medium: hsl(240, 6%, 50%);
+	--neutral-bold: hsl(237, 12%, 33%);
+
+	/* Background */
+	--gradient: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+
+	--font-family: 'Kumbh Sans', serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	width: 100%;
+	background-image: var(--gradient);
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	height: 80vh;
+	max-height: 550px;
+	width: 80vw;
+	max-width: 330px;
+	margin: auto 0;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 1.75em 1.25em rgba(0, 0, 0, 0.2);
+}
+
+.card .images {
+	position: relative;
+	height: 35%;
+	width: 100%;
+}
+
+.images .box.mobile,
+.images .woman.mobile,
+.images .bg-pattern.mobile {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+}
+
+.images .desktop {
+	display: none;
+}
+
+.images .woman.mobile {
+	transform: translate(-3%, -55%)  scale(0.9);
+}
+
+.images .bg-pattern.mobile {
+	transform: translate(2%, 5%) scale(0.9);
+}
+
+.card .content {
+	display: flex; 
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: var(--font-family);
+	padding: 0 0.75em 1em 1em;
+}
+
+.content h2 {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.content .item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 50px;
+	font-size: 0.75rem;	
+	border-bottom: 1px solid var(--neutral-light);
+}
+
+.item .heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 400;
+	color: var(--neutral-bold);
+}
+
+.heading img {
+	transition: rotate 0.35s ease-out;
+}
+
+.heading span {
+	transition: color 0.25s ease-out;
+}
+
+.item .heading span,
+.item .heading img {
+	cursor: pointer;
+}
+
+.item .heading span:hover{
+	color: var(--accent);
+}
+
+.item p {
+	height: 0;
+	overflow: hidden;
+	color: var(--neutral-medium);
+	transition: height 0.35s ease-out;
+}
+
+.item.active .heading {
+	margin: 0.5em 0;
+}
+
+.item.active .heading span {
+	color: var(--primary);
+	font-weight: 700;
+}
+
+.item.active p {
+	height: 100%;
+	margin-bottom: 0.6em;
+}
+
+@media (min-width: 1200px) {
+	.card {
+		flex-direction: row;
+		max-height: 70vh;
+		min-width: 65%;
+	}
+	.card .images {
+		height: 100%;
+		width: 50%;
+	}
+
+	.images .box.mobile,
+	.images .woman.mobile,
+	.images .bg-pattern.mobile {
+		display: none;
+	}
+
+	.images .box.desktop,
+	.images .woman.desktop,
+	.images .bg-pattern.desktop {
+		display: block;
+		position: absolute;
+		inset: 0;
+	}
+
+	.images .box.desktop {
+		z-index: 3;
+	}
+
+	.images .woman.desktop {
+		z-index: 2;
+		overflow: hidden;
+	}
+
+	.images .bg-pattern.desktop{
+		z-index: 1;
+		overflow: hidden;
+	}
+	
+	.images .bg-pattern.desktop img{
+		transform: translate(-65%, -32%);
+	}
+	
+	.images .woman.desktop img {
+		transform: translate(-20%, 15%) scale(0.9);
+	}
+
+	.images .box.desktop img {
+		transform: translate(-60%, 105%) scale(0.9);
+	}
+	
+	.card .content {
+		justify-content: center;
+		height: 100%;
+		width: 50%;
+		padding-right: 10%;
+	}
+
+	.card .content h2 {
+		text-align: start;
+		margin-top: 0.25em;
+		margin-bottom: 0.75em;
+	}
+
+	.content .item {
+		width: 100%;
+	}
+
+	.content .item p {
+		margin-bottom: 0.7em;
+	}	
+}
