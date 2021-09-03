@@ -29,13 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](images\screenshot.png)
+![Screenshot](.\images\screenshot.png)
 
 
 ### Links
 
 - Solution URL: [style.css](style.css)
-- Live Site URL: []()
+- Live Site URL: [https://lu1z-gust4v0.github.io/Front-End-Mentor-003/](https://lu1z-gust4v0.github.io/Front-End-Mentor-003/)
 
 ## My process
 
@@ -48,23 +48,23 @@ Users should be able to:
 
 ### What I learned
 
-
-
+I learned how to use, in a small project, my previous Css knowledge. There are many things that I still do not know, so I will continue studying and improving my code skills.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Kevin Powell's Channel](https://www.youtube.com/user/KepowOb) 
+  His CSS tutorials and Videos helped me to improve my CSS skills. I am going to continue watching his Youtube Channel.
+
+- [Online Tutorials](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog)
+  Inspiration for future projects.
 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
+- Frontend Mentor - [@Lu1z-Gust4v0](https://www.frontendmentor.io/profile/Lu1z-Gust4v0)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- Kevin Powell
 
+Thanks to Mr. Powell I could learn many things about flex-box, Design, Grid, etc. I would recomend you to take a look at his Youtube Channel.
